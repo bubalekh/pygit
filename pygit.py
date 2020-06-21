@@ -345,6 +345,7 @@ def build_lines_data(lines):
     return b''.join(result)
 
 
+# TODO: rewrite http_request function with requests module
 def http_request(url, username, password, data=None):
     """Make an authenticated HTTP request to given URL (GET by default, POST
     if "data" is not None).
